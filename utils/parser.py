@@ -152,5 +152,148 @@ def extract_alarm_events(parsed_entries) -> List[Dict]:
                 "Severity": "Info",
                 "Status": "OK",
                 "Raise Date": ts,
+                "Terminated Date": ts,
+                "Message": msg
+            })
+            continue
+        if re_added_file_watcher.search(msg):
+            events.append({
+                "Device Name": "Endpoint",
+                "Alarm Name": "FILE_WATCHER_ADDED",
+                "Severity": "Info",
+                "Status": "OK",
+                "Raise Date": ts,
+                "Terminated Date": ts,
+                "Message": msg
+            })
+            continue
+        mprod = re_no_of_products.search(msg)
+        if mprod:
+            events.append({
+                "Device Name": "Endpoint",
+                "Alarm Name": "PRODUCT_COUNT",
+                "Severity": "Info",
+                "Status": "Info",
+                "Raise Date": ts,
+                "Terminated Date": ts,
+                "Message": f"No of products to be installed: {mprod.group(1)}"
+            })
+            continue
+        mver = re_version_info.search(msg)
+        if mver:
+            events.append({
+                "Device Name": "Endpoint",
+                "Alarm Name": "BUILD_VERSION",
+                "Severity": "Info",
+                "Status": "Info",
+                "Raise Date": ts,
+                "Terminated Date": ts,
+                "Message": f"Build Version: {mver.group(1)}"
+            })
+            continue
+        if re_spec_success.search(msg):
+            events.append({
+                "Device Name": "Endpoint",
+                "Alarm Name": "SPECFILE_OK",
+                "Severity": "Info",
+                "Status": "Info",
+                "Raise Date": ts,
+                "Terminated Date": ts,
+                "Message": msg
+            })
+            continue
+
+        # TSMC alarms & restarts
+        m = re_alarm_raised.search(msg)
+        if m:
+            events.append({
+                "Device Name": "TSMC",
+                "Alarm Name": m.group(1),
+                "Severity": "Unknown",
+                "Status": "Raised",
+                "Raise Date": ts,
+                "Terminated Date": ts,
+                "Message": msg
+            })
+            continue
+
+        m2 = re_alarm_terminated.search(msg)
+        if m2:
+            events.append({
+                "Device Name": "TSMC",
+                "Alarm Name": m2.group(1),
+                "Severity": "Unknown",
+                "Status": "Terminated",
+                "Raise Date": ts,
+                "Terminated Date": ts,
+                "Message": msg
+            })
+            continue
+
+        if re_uncontrolled_restart.search(msg):
+            events.append({
+                "Device Name": "TSMC",
+                "Alarm Name": "UNCONTROLLED_RESTART",
+                "Severity": "Critical",
+                "Status": "Occurred",
+                "Raise Date": ts,
+                "Terminated Date": ts,
+                "Message": msg
+            })
+            continue
+
+        if re_controlled_restart.search(msg):
+            events.append({
+                "Device Name": "TSMC",
+                "Alarm Name": "CONTROLLED_RESTART",
+                "Severity": "Info",
+                "Status": "Occurred",
+                "Raise Date": ts,
+                "Terminated Date": ts,
+                "Message": msg
+            })
+            continue
+
+        m3 = re_software_err.search(msg)
+        if m3:
+            code = m3.group(1)
+            events.append({
+                "Device Name": "TSMC",
+                "Alarm Name": f"SYS_ERR_{code}",
+                "Severity": "Critical" if code != "0" else "Warning",
+                "Status": "Occurred",
+                "Raise Date": ts,
+                "Terminated Date": ts,
+                "Message": msg
+            })
+            continue
+
+        m_sym = re_failed_symbol.search(msg)
+        if m_sym:
+            symbol = m_sym.group(1)
+            events.append({
+                "Device Name": "Endpoint",
+                "Alarm Name": f"INSTALL_FAIL_{symbol}",
+                "Severity": "Critical",
+                "Status": "Failed",
+                "Raise Date": ts,
+                "Terminated Date": ts,
+                "Message": msg
+            })
+            continue
+
+        if re_failed_generic.search(msg):
+            events.append({
+                "Device Name": "TSMC" if "TSMC" in (row.get("Raw","") or "") else "Endpoint",
+                "Alarm Name": "FAILED_ACTION",
+                "Severity": "Warning",
+                "Status": "Occurred",
+                "Raise Date": ts,
+                "Terminated Date": ts,
+                "Message": msg
+            })
+            continue
+
+    return events
 
 
