@@ -1,0 +1,17 @@
+2025-07-31 22:44:46.263 ma_updater(10676.10772) ma_updater.Trace: configurator created successfully
+2025-07-31 22:44:46.263 ma_updater(10676.10772) crypto.Info: Crypto logger used <00000230A8C662D0>
+2025-07-31 22:44:46.263 ma_updater(10676.10772) crypto.Debug: Using C:\ProgramData\McAfee\Agent\keystore as keystore path
+2025-07-31 22:44:46.263 ma_updater(10676.10772) crypto.Debug: Using C:\ProgramData\McAfee\Agent\certstore as certstore path
+2025-07-31 22:44:46.263 ma_updater(10676.10772) crypto.Debug: Using C:\ProgramData\McAfee\Agent\crlstore as crlstore path
+2025-07-31 22:44:46.263 ma_updater(10676.10772) crypto.Debug: Using C:\ProgramData\McAfee\Agent\ as crypto lib path
+2025-07-31 22:44:46.326 ma_updater(10676.10772) crypto.Info: Key imported successfully and recognized in RSA format
+2025-07-31 22:44:46.326 ma_updater(10676.10772) crypto.Info: Key imported successfully and recognized in RSA format
+2025-07-31 22:44:46.326 ma_updater(10676.10772) crypto.Debug: Successfully initialized crypto library
+2025-07-31 22:44:46.326 ma_updater(10676.10772) ma_updater.Info: Got IAMCredentials id =-1
+2025-07-31 22:44:46.326 ma_updater(10676.10772) ma_updater.Info: Got registrationTokenUrl =
+2025-07-31 22:44:46.326 ma_updater(10676.10772) ma_updater.Info: Got accessTokenUrl =
+2025-07-31 22:44:46.326 ma_updater(10676.10772) ma_updater.Info: mcafee registration token url prod and pre-prod not found.
+2025-07-31 22:44:46.326 ma_updater(10676.10772) ma_updater.Info: mcafee access token url prod and pre-prod not found.
+2025-07-31 22:44:46.326 ma_updater(10676.10772) ma_updater.Info: ma_config_param_handle rc=0
+2025-07-31 22:44:46.326 ma_updater(10676.10772) ma_updater.Info: =====================configuration finished===========================
+2025-07-31 22:44:46.326 ma_updater(10676.10772) crypto.Info: Crypto logger released <00000230A8C662D0>

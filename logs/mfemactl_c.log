@@ -1,0 +1,48 @@
+2025-07-31 21:58:41.591 masvc(8916.6800) protected_aac_ctl.Info: starting protected_aac_ctl worker thread...
+2025-07-31 21:58:41.591 masvc(8916.6800) protected_aac_ctl.Info: Attempting to create child process using cmdline: <"C:\Program Files\McAfee\Agent\x86\\mfemactl.exe" --msi 1 --log "C:\ProgramData\McAfee\Agent\logs" --ppid 8916 --interface 4D454F57010000000000000000000000C00000000000004600000000050000003B1BCEC30A5124E10F93B8F3ABABFBE701FC0000D422901AE93A3F9C893ED70000000000 >...
+2025-07-31 21:58:41.591 masvc(8916.6800) protected_aac_ctl.Info: Ok, successfully created child process
+2025-07-31 21:58:41.654 masvc(8916.6800) protected_aac_ctl.Info: In RegisterProtectedAacCtl
+2025-07-31 21:58:41.654 masvc(8916.8096) protected_aac_ctl.Info: Worker thread reported successful start
+2025-07-31 21:58:41.654 masvc(8916.6800) protected_aac_ctl.Info: ProcessThreadMessage invoking VALIDATE_VTP
+2025-07-31 21:58:41.685 masvc(8916.8096) protected_aac_ctl.Info: protected_aac_ctl_validate_vtp completed with status: <0>, result: <0>
+2025-07-31 21:58:41.685 masvc(8916.6800) protected_aac_ctl.Info: ProcessThreadMessage invoking (START|STOP)_MONITORING
+2025-07-31 21:58:41.685 masvc(8916.8096) protected_aac_ctl.Info: protected_aac_ctl_start_monitoring completed with status: <0>
+2025-07-31 21:58:41.685 masvc(8916.6800) protected_aac_ctl.Info: ProcessThreadMessage invoking APPLY_POLICY
+2025-07-31 21:58:41.701 masvc(8916.8096) protected_aac_ctl.Info: protected_aac_ctl_apply_policy completed with status: <0>
+2025-07-31 21:58:41.701 masvc(8916.6800) protected_aac_ctl.Info: ProcessThreadMessage invoking ENABLE_DISABLE_AAC_GROUP for policy {C7080E42-1D78-4B64-8E32-6D9E032123FE}, ma.selfprotect, -1
+2025-07-31 21:58:41.701 masvc(8916.8096) protected_aac_ctl.Info: protected_aac_ctl_enable_group completed with status: <80004002>
+2025-07-31 21:58:41.701 masvc(8916.6800) protected_aac_ctl.Info: ProcessThreadMessage invoking ENABLE_DISABLE_AAC_GROUP for policy {2AA87236-7E59-449B-BDE1-D2A6045ED15B}, mfemms, -1
+2025-07-31 21:58:41.701 masvc(8916.8096) protected_aac_ctl.Info: protected_aac_ctl_enable_group completed with status: <80004002>
+2025-07-31 21:58:41.701 masvc(8916.6800) protected_aac_ctl.Info: ProcessThreadMessage invoking ENABLE_DISABLE_AAC_GROUP for policy {65CF3D67-B283-4477-83C6-181CEFAC7443}, mfemms, -1
+2025-07-31 21:58:41.716 masvc(8916.8096) protected_aac_ctl.Info: protected_aac_ctl_enable_group completed with status: <80004002>
+2025-07-31 21:59:24.944 masvc(8916.6800) protected_aac_ctl.Info: ProcessThreadMessage invoking APPLY_POLICY
+2025-07-31 21:59:24.944 masvc(8916.8096) protected_aac_ctl.Info: protected_aac_ctl_apply_policy completed with status: <0>
+2025-07-31 21:59:24.944 masvc(8916.6800) protected_aac_ctl.Info: ProcessThreadMessage invoking ENABLE_DISABLE_AAC_GROUP for policy {578CD062-4EAC-4242-A026-5938D40F45E6}, dxl, -1
+2025-07-31 21:59:24.960 masvc(8916.8096) protected_aac_ctl.Info: protected_aac_ctl_enable_group completed with status: <80004002>
+2025-07-31 21:59:24.960 masvc(8916.6800) protected_aac_ctl.Info: ProcessThreadMessage invoking APPLY_POLICY
+2025-07-31 21:59:24.960 masvc(8916.8096) protected_aac_ctl.Info: protected_aac_ctl_apply_policy completed with status: <0>
+2025-07-31 21:59:24.960 masvc(8916.6800) protected_aac_ctl.Info: ProcessThreadMessage invoking ENABLE_DISABLE_AAC_GROUP for policy {578CD062-4EAC-4242-A026-5938D40F45E6}, dxl, -1
+2025-07-31 21:59:24.960 masvc(8916.8096) protected_aac_ctl.Info: protected_aac_ctl_enable_group completed with status: <80004002>
+2025-07-31 22:39:23.676 masvc(8916.6800) protected_aac_ctl.Info: In UnregisterProtectedAacCtl
+2025-07-31 22:39:23.708 masvc(8916.6800) protected_aac_ctl.Info: Child process terminated, exit code: <0>
+2025-07-31 22:39:25.723 masvc(8916.6800) protected_aac_ctl.Info: Attempting to create child process using cmdline: <"C:\Program Files\McAfee\Agent\x86\\mfemactl.exe" --msi 1 --log "C:\ProgramData\McAfee\Agent\logs" --ppid 8916 --interface 4D454F57010000000000000000000000C00000000000004600000000050000003B1BCEC30A5124E1E9BD7A340FB093FD01D00000D422901A393D9054F307078E00000000 >...
+2025-07-31 22:39:25.723 masvc(8916.6800) protected_aac_ctl.Info: Ok, successfully created child process
+2025-07-31 22:39:25.785 masvc(8916.6800) protected_aac_ctl.Info: In RegisterProtectedAacCtl
+2025-07-31 22:39:25.785 masvc(8916.6800) protected_aac_ctl.Info: ProcessThreadMessage invoking (START|STOP)_MONITORING
+2025-07-31 22:39:25.801 masvc(8916.8096) protected_aac_ctl.Info: protected_aac_ctl_start_monitoring completed with status: <0>
+2025-07-31 22:39:25.801 masvc(8916.6800) protected_aac_ctl.Info: ProcessThreadMessage invoking APPLY_POLICY
+2025-07-31 22:39:25.832 masvc(8916.8096) protected_aac_ctl.Info: protected_aac_ctl_apply_policy completed with status: <0>
+2025-07-31 22:39:25.832 masvc(8916.6800) protected_aac_ctl.Info: ProcessThreadMessage invoking ENABLE_DISABLE_AAC_GROUP for policy {C7080E42-1D78-4B64-8E32-6D9E032123FE}, ma.selfprotect, -1
+2025-07-31 22:39:25.832 masvc(8916.8096) protected_aac_ctl.Info: protected_aac_ctl_enable_group completed with status: <0>
+2025-07-31 22:39:25.832 masvc(8916.6800) protected_aac_ctl.Info: ProcessThreadMessage invoking ENABLE_DISABLE_AAC_GROUP for policy {2AA87236-7E59-449B-BDE1-D2A6045ED15B}, mfemms, -1
+2025-07-31 22:39:25.848 masvc(8916.8096) protected_aac_ctl.Info: protected_aac_ctl_enable_group completed with status: <0>
+2025-07-31 22:39:25.848 masvc(8916.6800) protected_aac_ctl.Info: ProcessThreadMessage invoking ENABLE_DISABLE_AAC_GROUP for policy {65CF3D67-B283-4477-83C6-181CEFAC7443}, mfemms, -1
+2025-07-31 22:39:25.848 masvc(8916.8096) protected_aac_ctl.Info: protected_aac_ctl_enable_group completed with status: <0>
+2025-07-31 22:39:25.848 masvc(8916.6800) protected_aac_ctl.Info: ProcessThreadMessage invoking APPLY_POLICY
+2025-07-31 22:39:25.879 masvc(8916.8096) protected_aac_ctl.Info: protected_aac_ctl_apply_policy completed with status: <0>
+2025-07-31 22:39:25.879 masvc(8916.6800) protected_aac_ctl.Info: ProcessThreadMessage invoking ENABLE_DISABLE_AAC_GROUP for policy {578CD062-4EAC-4242-A026-5938D40F45E6}, dxl, -1
+2025-07-31 22:39:25.879 masvc(8916.8096) protected_aac_ctl.Info: protected_aac_ctl_enable_group completed with status: <0>
+2025-07-31 22:45:06.291 masvc(8916.6800) protected_aac_ctl.Info: ProcessThreadMessage invoking APPLY_POLICY
+2025-07-31 22:45:06.322 masvc(8916.8096) protected_aac_ctl.Info: protected_aac_ctl_apply_policy completed with status: <0>
+2025-07-31 22:45:06.322 masvc(8916.6800) protected_aac_ctl.Info: ProcessThreadMessage invoking ENABLE_DISABLE_AAC_GROUP for policy {578CD062-4EAC-4242-A026-5938D40F45E6}, dxl, -1
+2025-07-31 22:45:06.338 masvc(8916.8096) protected_aac_ctl.Info: protected_aac_ctl_enable_group completed with status: <0>

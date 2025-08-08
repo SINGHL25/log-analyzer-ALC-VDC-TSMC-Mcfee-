@@ -1,0 +1,20 @@
+2025-07-31 22:41:08	E	#4552	ScrptUtl	Error trace:
+2025-07-31 22:41:08	E	#4552	Thread	 [Main thread]->
+2025-07-31 22:41:08	E	#4552	SessMgr	 [SessionManager::runScript:C:\ProgramData\McAfee\Agent\update\InstallMain.McS]->
+2025-07-31 22:41:08	E	#4552	ScrptExe	 [Executing section ScriptMain]->
+2025-07-31 22:41:08	E	#4552	ScrptExe	 [Call]->
+2025-07-31 22:41:08	E	#4552	ScrptExe	 [Executing section InstallAllProducts]->
+2025-07-31 22:41:08	E	#4552	ScrptExe	 [LoopIf]->
+2025-07-31 22:41:08	E	#4552	ScrptExe	 [Executing section InstallProduct]->
+2025-07-31 22:41:08	E	#4552	ScrptExe	 [CallIf]->
+2025-07-31 22:41:08	E	#4552	ScrptExe	 [Executing section ContinueProductInstallation]->
+2025-07-31 22:41:08	E	#4552	ScrptExe	 [CallIf]->
+2025-07-31 22:41:08	E	#4552	ScrptExe	 [Executing section ScriptInstall]->
+2025-07-31 22:41:08	E	#4552	ScrptExe	 [Call]->
+2025-07-31 22:41:08	E	#4552	ScrptExe	 [Executing section RunInstallScript]->
+2025-07-31 22:41:08	E	#4552	ScrptExe	 [Line 2071:  RunScript dwRet = C:\ProgramData\McAfee\Agent\\Evaluation\ENDP_AM_1070\Install\0000\ThreatPreventionInstall.mcs, ScriptMain]->
+2025-07-31 22:41:08	E	#4552	ScrptExe	 [Executing section ScriptMain]->
+2025-07-31 22:41:08	E	#4552	ScrptExe	 [CallIf]->
+2025-07-31 22:41:08	E	#4552	ScrptExe	 [Executing section SendSuccessEvent]->
+2025-07-31 22:41:08	E	#4552	ScrptExe	 [XmlGetItem]->
+2025-07-31 22:41:08	E	#4552	ScrptUtl	  Could not find symbol for dereferencing MainCatalogCookie
