@@ -1,11 +1,11 @@
 streamlit>=1.25.0
 pandas>=2.0
+python-dateutil>=2.8
 altair>=5.0
 matplotlib>=3.6
-python-dateutil>=2.8
-openpyxl>=3.0
-xlrd>=2.0
 Pillow>=9.0
-plotly
+openpyxl>=3.0
+# plotly is optional but recommended for nicer bar charts
+plotly>=5.0
 
 
